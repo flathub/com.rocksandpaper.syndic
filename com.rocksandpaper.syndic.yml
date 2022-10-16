@@ -20,4 +20,4 @@ modules:
   sources:
   - type: git
     url: 'https://github.com/cscarney/syndic.git'
-    tag: v1.0rc3
+    tag: v1.0
