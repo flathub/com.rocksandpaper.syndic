@@ -5,7 +5,6 @@ runtime: org.kde.Platform
 runtime-version: '5.15-21.08'
 sdk: org.kde.Sdk
 command: syndic
-rename-icon: syndic
 finish-args:
 - --share=network
 - --share=ipc
@@ -15,9 +14,17 @@ finish-args:
 - --talk-name=org.freedesktop.Notifications
 - --talk-name=org.kde.StatusNotifierWatcher
 modules:
+# qreadable is currently necessary for showing web content
+- name: qreadable
+  buildsystem: cmake-ninja
+  sources:
+  - type: git
+    url: 'https://invent.kde.org/ccarney/qreadable.git'
+    commit: c6f5edc89b58ec577d9f877e7b0d733c4cf61855
+
 - name: syndic
   buildsystem: cmake-ninja
   sources:
   - type: git
     url: 'https://github.com/cscarney/syndic.git'
-    tag: v1.0
+    tag: v1.1
