@@ -20,11 +20,11 @@ modules:
   sources:
   - type: git
     url: 'https://invent.kde.org/ccarney/qreadable.git'
-    commit: c6f5edc89b58ec577d9f877e7b0d733c4cf61855
+    commit: c497bf1ee0dd81adb9f1f1d40a52ab947c9ad89a
 
 - name: syndic
   buildsystem: cmake-ninja
   sources:
   - type: git
     url: 'https://github.com/cscarney/syndic.git'
-    tag: v1.1
+    tag: v1.2
