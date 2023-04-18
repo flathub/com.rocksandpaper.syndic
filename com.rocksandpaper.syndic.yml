@@ -20,7 +20,7 @@ modules:
   sources:
   - type: git
     url: 'https://invent.kde.org/ccarney/qreadable.git'
-    commit: c497bf1ee0dd81adb9f1f1d40a52ab947c9ad89a
+    tag: readability-0.4.4
 
 - name: syndic
   buildsystem: cmake-ninja
