@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 id: com.rocksandpaper.syndic
 runtime: org.kde.Platform
-runtime-version: '5.15-22.08'
+runtime-version: '6.6'
 sdk: org.kde.Sdk
 command: syndic
 finish-args:
@@ -20,11 +20,11 @@ modules:
   sources:
   - type: git
     url: 'https://invent.kde.org/ccarney/qreadable.git'
-    tag: readability-0.4.4
+    tag: readability-0.5.0
 
 - name: syndic
   buildsystem: cmake-ninja
   sources:
   - type: git
     url: 'https://github.com/cscarney/syndic.git'
-    tag: v1.4.3
+    tag: v1.99.1
